@@ -26,11 +26,9 @@ function App() {
       setAllCountries(data);
       setIsLoading(false);
     };
+    getData();
 
-    setTimeout(() => {
-      getData();
-    }, 3000);
-  }, []);
+    }, []);
 
   const filterByRegion = (region) => {
     const newCountries = allCountries.filter(
